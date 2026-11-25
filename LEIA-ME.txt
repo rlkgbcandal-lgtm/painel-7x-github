@@ -1,0 +1,27 @@
+PAINEL 7X - BUILD PELO GITHUB ACTIONS
+
+O projeto gera um aplicativo WPF para Windows x64. O GitHub Actions compila o EXE automaticamente; nao e necessario instalar o .NET SDK no seu computador.
+
+COMO GERAR O EXE PELO GITHUB:
+1. Entre em https://github.com e crie um repositorio novo chamado Painel7X. Pode deixar Public ou Private.
+2. Extraia este ZIP no computador.
+3. Abra o repositorio no GitHub e escolha Add file > Upload files.
+4. Envie TODO o conteudo da pasta painel7x (incluindo a pasta oculta .github e o arquivo .gitignore) para a raiz do repositorio. Nao envie a pasta externa p7xwork.
+5. Clique em Commit changes.
+6. Abra a aba Actions do repositorio e selecione Build Painel 7X.
+7. Aguarde o trabalho ficar verde (Success). Abra a execucao concluida e procure Artifacts.
+8. Baixe Painel7X-Windows-x64. Dentro do ZIP baixado estara Painel7X.exe.
+
+Se a aba Actions pedir autorizacao para executar workflows, habilite-os. Se o repositorio for privado, mantenha-o privado se o codigo nao for destinado a publicacao.
+
+COMPILACAO MANUAL (OPCIONAL):
+No Windows com .NET 8 SDK instalado, execute build.bat.
+
+RECURSOS DESTA VERSAO:
+- Janela WPF com visual escuro e detalhes dourados.
+- Navegacao entre Visao geral, Macro de correr e Configuracoes.
+- Macro de correr: enquanto a tecla W estiver pressionada, envia scroll do mouse para cima no intervalo configurado em MS.
+- Ajuste de intervalo, incluindo predefinicao de 320 MS.
+- Salvamento local das configuracoes em %LOCALAPPDATA%\Painel7X\settings.json.
+
+Deagle, Lite Foot e Recoil aparecem como modulos desativados nesta versao; nao foram implementados.
